@@ -30,7 +30,9 @@ Route::get('/blog', function () {
 });
 
 Route::get('/basicrouting', function(){
-    return "Basic Routing Merupakan Rute Laravel paling dasar menerima URI dan penutupan, menyediakan metode yang sangat sederhana dan ekspresif untuk mendefinisikan rute dan perilaku tanpa file konfigurasi perutean yang rumit";
+    return "Basic Routing Merupakan Rute Laravel paling dasar menerima URI dan penutupan, 
+    menyediakan metode yang sangat sederhana dan ekspresif untuk mendefinisikan rute dan 
+    perilaku tanpa file konfigurasi perutean yang rumit";
 });
 
 Route::get('/basicroutingget', function () {
@@ -44,6 +46,10 @@ Route::view("/routeparam", "routeparam",
 ]);
 
 Route::get('/controlcoba', [controlleroute::class, 'routecontroller']);
+
+//Route::post('/controlcobapost', [cobacontroller::class, 'controlcobapost']);
+
+Route::post("/controlcobapost", "controlleroute@controlcobapost");
 
 Route::redirect('/routeredirect', '/Redirect-lain');
 Route::get('/Redirect-lain', function(){

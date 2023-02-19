@@ -25,7 +25,8 @@
 					<li><a href="/basicrouting">Basic Routing</a></li>
 					<li><a href="/basicroutingget">Basic Routing Get</a></li>
 					<li><a href="/routeparam">Route dengan parameter</a></li>
-					<li><a href="/controlcoba">Route dengan Controller </a></li>	
+					<li><a href="/controlcoba">Route GET dengan Controller </a></li>	
+					<li><a href="/controlcobapost">Route POST dengan Controller </a></li>
 					<li><a href="/routeredirect">Route Redirect</a></li>
 					<li><a href="/route/50">Route dengan pramater ID </a></li>			
 					<li><a href="/routegroup/g1">Route Group 1</a></li>

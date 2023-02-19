@@ -6,9 +6,6 @@ use Illuminate\Http\Request;
 
 class controlleroute extends Controller
 {
-    function index(){
-        return "Farhan Abdillah";
-        }
     
         function routecontroller(){
             return view('routecontroller');
@@ -16,7 +13,7 @@ class controlleroute extends Controller
     
       
     
-        public function dashboard(Request $request){
+        public function controlcobapost(Request $request){
             dd($request->all());
         }
 }
