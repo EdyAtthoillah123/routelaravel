@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\controlleroute;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,7 +51,7 @@ Route::get('/controlcoba', [controlleroute::class, 'routecontroller']);
 
 //Route::post('/controlcobapost', [cobacontroller::class, 'controlcobapost']);
 
-Route::post("/controlcobapost", "controlleroute@controlcobapost");
+// Route::post("/controlcobapost", "controlleroute@controlcobapost");
 
 Route::redirect('/routeredirect', '/Redirect-lain');
 Route::get('/Redirect-lain', function(){
@@ -78,3 +80,13 @@ Route::prefix('routegroup')->group(function(){
         return "Disini saya mencoba Route Group 4";
     });
 });
+
+
+Route::get('/user', [controlleroute::class, 'index']);
+Route::get('/create', [controlleroute::class, 'create']);
+Route::get('/store', [controlleroute::class, 'store']);
+Route::get('/show/{id}', [controlleroute::class, 'show']);
+Route::get('/edit/{id}', [controlleroute::class, 'edit']);
+Route::get('/update/{id}', [controlleroute::class, 'update']);
+Route::get('/destroy/{id}', [controlleroute::class, 'destroy']);
+

@@ -7,7 +7,7 @@
 <body>
 	<div class="wrap">
 		<div class="header">			
-			<h1>Belajar layouting Html Css</h1>
+			<h1>Belajar Routing Laravel</h1>
 			<p>Ini Bagian Header</p>
 		</div>
 		<div class="menu">
@@ -32,7 +32,13 @@
 					<li><a href="/routegroup/g1">Route Group 1</a></li>
 					<li><a href="/routegroup/g2">Route Group 2</a></li>
 					<li><a href="/routegroup/g3">Route Group 3</a></li>
-					<li><a href="/routegroup/g4">Route Group 4</a></li>			
+					<li><a href="/user">route Controller user</a></li>	
+					<li><a href="/create">route Controller create</a></li>	
+					<li><a href="/store">route Controller store</a></li>	
+					<li><a href="/show/50">Route Controller show</a></li>	
+					<li><a href="/edit/60">Route Controller Edit</a></li>	
+					<li><a href="/update/70">Route Controller update</a></li>			
+					<li><a href="/destroy/80">Route Controller Desrroy </a></li>
 				</ul>
 			</div>
 			<div class="content">
